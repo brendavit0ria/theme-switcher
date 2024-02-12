@@ -1,0 +1,56 @@
+*, :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--light);
+}
+
+#switch {
+  position: relative;
+}
+
+button {
+  width: 86.31px;
+  height: 86.31px;
+  background: white;
+  border-radius: 50%;  
+  border: 0; 
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+span {
+  display: flex;
+  justify-content: end;
+  background: var(--label);
+  width: 235.38px;
+  height: 102px;
+  border-radius: 60px;
+}
+
+img {
+  margin: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
