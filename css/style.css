@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--light);
+  background-color: var(--dark);
 }
 
 #switch {
@@ -22,18 +22,24 @@
 button {
   width: 86.31px;
   height: 86.31px;
-  background: white;
+  background: #FFF;
   border-radius: 50%;  
   border: 0; 
   position: absolute;
   top: 50%;
-  left: 10px;
+  right: 10px;
   transform: translateY(-50%);
+  animation: slide-back 0.4s;
+  cursor: pointer;
+}
+
+.active button {
+  animation: slide-in 0.4s forwards;
 }
 
 span {
   display: flex;
-  justify-content: end;
+  justify-content: start;
   background: var(--label);
   width: 235.38px;
   height: 102px;
@@ -41,13 +47,27 @@ span {
 }
 
 img {
-  margin: 4px;
+  position: relative;
+  padding:  4px 10px
 }
 
+@keyframes slide-in {
+    from {
+        right: 0;
+    }
+    to {
+      right: 60%;  
+    }
+}
 
-
-
-
+@keyframes slide-back {
+  from {
+    right:60%;
+  } 
+   to {
+    right: 10px;
+   }
+}
 
 
 
